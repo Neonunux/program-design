@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Application() {
+export function ProgramDesign() {
   return (
     <p>
       Hello world

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ProgramDesign from './ProgramDesign';
+import { ProgramDesign } from './ProgramDesign';
 
 import './index.css';
 
