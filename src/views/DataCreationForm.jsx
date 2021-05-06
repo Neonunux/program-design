@@ -1,8 +1,10 @@
 import { noop } from 'lodash';
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function DataCreationForm({ onCreation = noop }) {
   const [newDataName, setNewDataName] = useState('');
+  const { t } = useTranslation();
 
   const createData = () => {
     const newData = {
@@ -23,7 +25,7 @@ export function DataCreationForm({ onCreation = noop }) {
         type="button"
         onClick={createData}
       >
-        create data
+        {t('create-data-action')}
       </button>
     </form>
   );

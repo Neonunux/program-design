@@ -10,7 +10,7 @@ export function ProgramDesign() {
       <ul>
         {datas.map((data) => (
           <li>
-            { data.name }
+            {data.name}
           </li>
         ))}
       </ul>
