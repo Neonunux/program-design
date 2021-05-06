@@ -1,5 +1,9 @@
 {
   "extends": [
-    "react-app"
-  ]
+    "react-app",
+    "airbnb"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off"
+  }
 }

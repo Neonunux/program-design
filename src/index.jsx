@@ -9,5 +9,5 @@ ReactDOM.render(
   <React.StrictMode>
     <ProgramDesign />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
