@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 
-import { DataCreationForm } from './DataCreationForm';
+import { InformationCreationForm } from './InformationCreationForm';
 
 export function ProgramDesign() {
-  const [datas, setDatas] = useState([]);
+  const [informations, setInformations] = useState([]);
 
   return (
     <>
       <ul>
-        {datas.map((data) => (
+        {informations.map((information) => (
           <li>
-            {data.name}
+            {information.name}
           </li>
         ))}
       </ul>
-      <DataCreationForm
-        onCreation={(newData) => setDatas([...datas, newData])}
+      <InformationCreationForm
+        onCreation={(newInformation) => setInformations([...informations, newInformation])}
       />
     </>
   );
