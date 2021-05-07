@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { without as withoutFp } from 'lodash/fp';
 
 import { InformationCreationForm } from './InformationCreationForm';
 import { RelationCreationForm } from './RelationCreationForm';
@@ -13,6 +14,12 @@ export function ProgramDesign() {
         {informations.map((information) => (
           <li key={information.name}>
             {information.name}
+            <button
+              type="button"
+              onClick={() => setInformations(withoutFp([information]))}
+            >
+              remove
+            </button>
           </li>
         ))}
       </ul>
