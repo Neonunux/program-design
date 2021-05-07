@@ -1,3 +1,4 @@
 {
-  "create-information-action": "create information"
+  "create-information-action": "create information",
+  "create-relation-action": "create relation"
 }

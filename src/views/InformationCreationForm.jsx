@@ -3,23 +3,23 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export function InformationCreationForm({ onCreation = noop }) {
-  const [newInformationName, setNewInformationName] = useState('');
+  const [name, setName] = useState('');
   const { t } = useTranslation();
 
   const createInformation = () => {
     const newInformation = {
-      name: newInformationName,
+      name,
     };
     onCreation(newInformation);
-    setNewInformationName('');
+    setName('');
   };
 
   return (
     <form>
       <input
         type="text"
-        value={newInformationName}
-        onChange={(event) => setNewInformationName(event.target.value)}
+        value={name}
+        onChange={(event) => setName(event.target.value)}
       />
       <button
         type="button"
